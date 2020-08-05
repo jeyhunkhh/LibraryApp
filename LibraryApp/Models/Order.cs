@@ -12,13 +12,13 @@ namespace LibraryApp.Models
         public Customer Customer { get; set; }
         [Required]
         [Column(TypeName = "date")]
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; }
         [Required]
         [Column(TypeName = "date")]
         public DateTime Deadline { get; set; }
         [Required]
         [Column(TypeName = "money")]
-        public decimal OrderPrice { get; set; } = 0;
+        public decimal OrderPrice { get; set; }
         public List<Book> Books { get; set; }
 
     }

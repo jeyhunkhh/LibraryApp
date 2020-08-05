@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zRTPcFBFIoiAh56JUzy0CemLhxqvDCgaDKDWnIdf0LNrSYHFq7gTXeK7s1XYvPVU00GTCWI23QGGZCVRtmmftQ==",
+  "dgSpecHash": "S1Oh6Cc1sUshNqNMRkaRUfGbhUgcLYFbhP1UO/5FBiO0jJEF7HQYNkYKWtTG5LVAhZrIjeImzzpMinxuGKn7AQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ceyhun\\Desktop\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ceyhun\\.nuget\\packages\\materialdesigncolors\\1.2.6\\materialdesigncolors.1.2.6.nupkg.sha512",
+    "C:\\Users\\Ceyhun\\.nuget\\packages\\materialdesignthemes\\3.1.3\\materialdesignthemes.3.1.3.nupkg.sha512",
     "C:\\Users\\Ceyhun\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Ceyhun\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Ceyhun\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

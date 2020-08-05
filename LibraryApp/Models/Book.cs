@@ -17,6 +17,8 @@ namespace LibraryApp.Models
         public string Author{ get; set; }
         [Required]
         public int Count { get; set; }
+        [Required]
+        public int BookShelf { get; set; }
 
         public int? OrderId { get; set; }
         public Order Order { get; set; }

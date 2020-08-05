@@ -1,0 +1,23 @@
+﻿<Window x:Class="LibraryApp.Windows.DashboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryApp.Windows"
+        mc:Ignorable="d"
+        Title="İdarə paneli" Height="440" Width="720" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Button x:Name="BtnCreateOrder" Content="Sifariş yaratma" Margin="25,56,485,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="BtnReturnBook" Content="Kitab qaytarma" Margin="255,56,255,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="BtnReturnBookFollow" Content="Kitab qaytaranları izlə" Margin="485,56,25,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Border BorderThickness="1" BorderBrush="#FF8645C7" HorizontalAlignment="Center" Height="2" Margin="0,133,0,0" VerticalAlignment="Top" Width="720"/>
+        <Border BorderThickness="1" BorderBrush="#FF8645C7" HorizontalAlignment="Center" Height="2" Margin="0,10,0,0" VerticalAlignment="Top" Width="720"/>
+        <Border BorderThickness="1" BorderBrush="#FF8645C7" HorizontalAlignment="Center" Height="2" Margin="0,268,0,0" VerticalAlignment="Top" Width="720"/>
+        <Button x:Name="BtnBook" Content="Kitablar" Margin="25,190,485,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="BtnManager" Content="İdarəçilər" Margin="255,190,255,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="BtnCustomer" Content="Müştərilər" Margin="485,190,25,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="BtnManager_Copy" Content="Hesabatlar" Margin="255,325,255,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
+
+
+    </Grid>
+</Window>

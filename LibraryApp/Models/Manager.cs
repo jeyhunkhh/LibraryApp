@@ -18,6 +18,8 @@ namespace LibraryApp.Models
         [Required]
         [StringLength(50)]
         public string Surname { get; set; }
-
+        [Required]
+        [StringLength(50)]
+        public string PhoneNumber { get; set; }
     }
 }
