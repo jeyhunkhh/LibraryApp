@@ -1,15 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+using System.ComponentModel.DataAnnotations;
 
 namespace LibraryApp.Models
 {
     public class Manager
     {
         public int Id { get; set; }
-        public string Username { get; set; }
+        [Required]
+        [StringLength(100)]
+        public string Email { get; set; }
+        [Required]
+        [StringLength(50)]
         public string Password { get; set; }
+        [Required]
+        [StringLength(50)]
         public string Name { get; set; }
+        [Required]
+        [StringLength(50)]
         public string Surname { get; set; }
 
     }

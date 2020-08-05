@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LibraryApp.Models
 {
@@ -9,10 +10,16 @@ namespace LibraryApp.Models
         public int Id { get; set; }
         public int CustomerId { get; set; }
         public Customer Customer { get; set; }
+        [Required]
+        [Column(TypeName = "date")]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+        [Required]
+        [Column(TypeName = "date")]
         public DateTime Deadline { get; set; }
-        public List<Book> Books { get; set; }
+        [Required]
+        [Column(TypeName = "money")]
         public decimal OrderPrice { get; set; } = 0;
+        public List<Book> Books { get; set; }
 
     }
 }

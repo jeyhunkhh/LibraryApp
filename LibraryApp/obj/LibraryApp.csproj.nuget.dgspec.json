@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ceyhun\\source\\repos\\LibraryApp\\LibraryApp.csproj": {}
+    "C:\\Users\\Ceyhun\\Desktop\\LibraryApp\\LibraryApp\\LibraryApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ceyhun\\source\\repos\\LibraryApp\\LibraryApp.csproj": {
+    "C:\\Users\\Ceyhun\\Desktop\\LibraryApp\\LibraryApp\\LibraryApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ceyhun\\source\\repos\\LibraryApp\\LibraryApp.csproj",
+        "projectUniqueName": "C:\\Users\\Ceyhun\\Desktop\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
         "projectName": "LibraryApp",
-        "projectPath": "C:\\Users\\Ceyhun\\source\\repos\\LibraryApp\\LibraryApp.csproj",
+        "projectPath": "C:\\Users\\Ceyhun\\Desktop\\LibraryApp\\LibraryApp\\LibraryApp.csproj",
         "packagesPath": "C:\\Users\\Ceyhun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ceyhun\\source\\repos\\LibraryApp\\obj\\",
+        "outputPath": "C:\\Users\\Ceyhun\\Desktop\\LibraryApp\\LibraryApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ceyhun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,28 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
