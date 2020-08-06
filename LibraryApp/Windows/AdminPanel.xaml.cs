@@ -59,7 +59,7 @@ namespace LibraryApp.Windows
 
             MessageBox.Show("İdarəçi əlavə olundu");
         }
-
+        
         private void DgManagers_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgManagers.SelectedItem == null) return;

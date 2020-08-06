@@ -1,5 +1,8 @@
-﻿using System;
+﻿using LibraryApp.Data;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
@@ -18,9 +21,13 @@ namespace LibraryApp.Windows
     /// </summary>
     public partial class LoginWindow : Window
     {
+        private readonly LibraryContext _libraryContext;
+
         public LoginWindow()
         {
             InitializeComponent();
+
+            _libraryContext = new LibraryContext();
         }
 
         private void BtnSignIn_Click(object sender, RoutedEventArgs e)
@@ -35,7 +42,7 @@ namespace LibraryApp.Windows
                 return;
             }
 
-            //Manager login
+            //Manager login Database
             if (string.IsNullOrEmpty(TxtEmail.Text))
             {
                 MessageBox.Show("E-poçt ünvani boş ola bilməz");
@@ -53,7 +60,16 @@ namespace LibraryApp.Windows
                 MessageBox.Show("Şifrə boş ola bilməz");
                 return;
             }
-            else
+
+            var modelEmail = _libraryContext.Managers.FirstOrDefault(m => m.Email == TxtEmail.Text);
+            
+            
+            if(modelEmail == null || modelEmail.Password != TxtPassword.Password)
+            {
+                MessageBox.Show("E-poçt ünvani və ya Şifrə yanlışdır");
+                return;
+            }
+            else 
             {
                 DashboardWindow dashboard = new DashboardWindow();
                 dashboard.Show();

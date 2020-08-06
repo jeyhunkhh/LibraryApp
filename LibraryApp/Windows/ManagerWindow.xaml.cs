@@ -1,5 +1,7 @@
-﻿using System;
+﻿using LibraryApp.Data;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,20 +15,20 @@ using System.Windows.Shapes;
 namespace LibraryApp.Windows
 {
     /// <summary>
-    /// Interaction logic for DashboardWindow.xaml
+    /// Interaction logic for ManagerWindow.xaml
     /// </summary>
-    public partial class DashboardWindow : Window
+    public partial class ManagerWindow : Window
     {
-        public DashboardWindow()
+        private readonly LibraryContext _libraryContext;
+        public ManagerWindow()
         {
             InitializeComponent();
+
+            _libraryContext = new LibraryContext();
+
+            DgManagersView.ItemsSource = _libraryContext.Managers.ToList();
         }
 
-        private void BtnManager_Click(object sender, RoutedEventArgs e)
-        {
-            ManagerWindow managerWindow = new ManagerWindow();
-
-            managerWindow.ShowDialog();
-        }
+        
     }
 }

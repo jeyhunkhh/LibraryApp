@@ -14,7 +14,7 @@
         <Border BorderThickness="1" BorderBrush="#FF8645C7" HorizontalAlignment="Center" Height="2" Margin="0,10,0,0" VerticalAlignment="Top" Width="720"/>
         <Border BorderThickness="1" BorderBrush="#FF8645C7" HorizontalAlignment="Center" Height="2" Margin="0,268,0,0" VerticalAlignment="Top" Width="720"/>
         <Button x:Name="BtnBook" Content="Kitablar" Margin="25,190,485,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Button x:Name="BtnManager" Content="İdarəçilər" Margin="255,190,255,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="BtnManager" Content="İdarəçilər" Margin="255,190,255,0" Height="32" VerticalAlignment="Top" FontWeight="Bold" Click="BtnManager_Click"/>
         <Button x:Name="BtnCustomer" Content="Müştərilər" Margin="485,190,25,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
         <Button x:Name="BtnManager_Copy" Content="Hesabatlar" Margin="255,325,255,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
 

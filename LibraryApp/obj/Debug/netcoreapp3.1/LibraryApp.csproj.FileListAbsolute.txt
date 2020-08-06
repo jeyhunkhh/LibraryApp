@@ -74,3 +74,5 @@ C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\Da
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\DashboardWindow.baml
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\AdminPanel.g.cs
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\AdminPanel.baml
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ManagerWindow.g.cs
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ManagerWindow.baml
