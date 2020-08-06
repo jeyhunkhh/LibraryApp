@@ -8,23 +8,23 @@
         Title="AdminPanel" Height="550" Width="1000" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <Grid Margin="0,0,747,0">
-            <TextBox x:Name="TxtEmail" HorizontalAlignment="Center" Margin="0,57,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
-            <Label x:Name="LblEmail" Content="E-poçt ünvanı" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Width="178" FontWeight="Bold" FontSize="14"/>
-            <TextBox x:Name="TxtPassword" HorizontalAlignment="Center" Margin="0,133,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
-            <Label x:Name="LblPassword" Content="Şifrə" HorizontalAlignment="Center" Margin="0,101,0,0" VerticalAlignment="Top" Width="178" FontWeight="Bold" FontSize="14"/>
-            <TextBox x:Name="TxtName" HorizontalAlignment="Center" Margin="0,210,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
-            <Label x:Name="LblName" Content="Ad" HorizontalAlignment="Center" Margin="0,178,0,0" VerticalAlignment="Top" Width="178" FontWeight="Bold" FontSize="14"/>
-            <TextBox x:Name="TxtSurname" HorizontalAlignment="Center" Margin="0,285,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
-            <Label x:Name="LblSurname" Content="Soyad" HorizontalAlignment="Center" VerticalAlignment="Center" Width="178" FontWeight="Bold" FontSize="14"/>
+            <TextBox x:Name="TxtName" HorizontalAlignment="Center" Margin="0,57,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
+            <Label x:Name="LblName" Content="Ad" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Width="178" FontWeight="Bold" FontSize="14"/>
+            <TextBox x:Name="TxtSurname" HorizontalAlignment="Center" Margin="0,133,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
+            <Label x:Name="LblSurmane" Content="Soyad" HorizontalAlignment="Center" Margin="0,101,0,0" VerticalAlignment="Top" Width="178" FontWeight="Bold" FontSize="14"/>
+            <TextBox x:Name="TxtEmail" HorizontalAlignment="Center" Margin="0,210,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
+            <Label x:Name="LblEmail" Content="E-poçt ünvanı" HorizontalAlignment="Center" Margin="0,178,0,0" VerticalAlignment="Top" Width="178" FontWeight="Bold" FontSize="14"/>
+            <TextBox x:Name="TxtPassword" HorizontalAlignment="Center" Margin="0,285,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
+            <Label x:Name="LblPassword" Content="Şifrə" HorizontalAlignment="Center" VerticalAlignment="Center" Width="178" FontWeight="Bold" FontSize="14"/>
             <TextBox x:Name="TxtPhoneNumber" HorizontalAlignment="Center" Margin="0,359,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
             <Label x:Name="LblPhoneNumber" Content="Telefon nömrəsi" HorizontalAlignment="Center" Margin="0,327,0,0" VerticalAlignment="Top" Width="178" FontWeight="Bold" FontSize="14"/>
             <Button x:Name="BtnCreate" Content="İdarəçi Əlavə et" HorizontalAlignment="Center" Margin="0,416,0,0" VerticalAlignment="Top" Width="178" Click="BtnCreate_Click"/>
-            <Button x:Name="BtnUpdate" Content="Yenilə" HorizontalAlignment="Center" Margin="0,416,0,0" VerticalAlignment="Top" Width="178" Visibility="Hidden"/>
-            <Button x:Name="BtnDelete" Content="Sil" HorizontalAlignment="Center" Margin="0,470,0,0" VerticalAlignment="Top" Width="178" Visibility="Hidden"/>
+            <Button x:Name="BtnUpdate" Content="Yenilə" HorizontalAlignment="Center" Margin="0,416,0,0" VerticalAlignment="Top" Width="178" Visibility="Hidden" Click="BtnUpdate_Click"/>
+            <Button x:Name="BtnDelete" Content="Sil" HorizontalAlignment="Center" Margin="0,470,0,0" VerticalAlignment="Top" Width="178" Visibility="Hidden" Click="BtnDelete_Click"/>
 
         </Grid>
         <Grid Margin="253,0,0,0">
-            <DataGrid x:Name="DgManagers" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+            <DataGrid x:Name="DgManagers" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" SelectionChanged="DgManagers_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Width="0.10*" Header="Id" Binding="{Binding Id}"/>
                     <DataGridTextColumn Width="0.20*" Header="Ad" Binding="{Binding Name}"/>
