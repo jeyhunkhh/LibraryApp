@@ -79,7 +79,7 @@ namespace LibraryApp.Windows
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult r = MessageBox.Show("Silməyə əminsiniz mi?", _selectedManager.ToString(), MessageBoxButton.OKCancel);
+            MessageBoxResult r = MessageBox.Show("Silməyə əminsiniz?", _selectedManager.ToString(), MessageBoxButton.OKCancel);
 
             if (r == MessageBoxResult.OK)
             {
@@ -109,7 +109,7 @@ namespace LibraryApp.Windows
 
             Reset();
 
-            MessageBox.Show("İdarəçi əlavə olundu");
+            MessageBox.Show("İdarəçi məlumatları yeniləndi");
         }
 
 

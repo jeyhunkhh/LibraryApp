@@ -28,5 +28,11 @@ namespace LibraryApp.Windows
 
             managerWindow.ShowDialog();
         }
+
+        private void BtnBook_Click(object sender, RoutedEventArgs e)
+        {
+            BooksWindow booksWindow = new BooksWindow();
+            booksWindow.ShowDialog();
+        }
     }
 }

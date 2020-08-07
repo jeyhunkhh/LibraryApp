@@ -9,7 +9,7 @@
     <Grid>
         <Grid Margin="0,0,747,0">
             <TextBox x:Name="TxtName" HorizontalAlignment="Center" Margin="0,57,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
-            <Label x:Name="LblName" Content="Ad" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Width="178" FontWeight="Bold" FontSize="14"/>
+            <Label x:Name="LblName" Content="Ad" Margin="0,25,37,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" HorizontalAlignment="Right" Width="178"/>
             <TextBox x:Name="TxtSurname" HorizontalAlignment="Center" Margin="0,133,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
             <Label x:Name="LblSurmane" Content="Soyad" HorizontalAlignment="Center" Margin="0,101,0,0" VerticalAlignment="Top" Width="178" FontWeight="Bold" FontSize="14"/>
             <TextBox x:Name="TxtEmail" HorizontalAlignment="Center" Margin="0,210,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text=""/>
@@ -34,6 +34,6 @@
                     <DataGridTextColumn Width="0.20*" Header="Telefon" Binding="{Binding PhoneNumber}"/>
                 </DataGrid.Columns>
             </DataGrid>
-         </Grid>
+        </Grid>
     </Grid>
 </Window>
