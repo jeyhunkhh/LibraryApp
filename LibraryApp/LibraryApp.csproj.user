@@ -13,6 +13,9 @@
     <Compile Update="Windows\BooksWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\CustomersWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Windows\DashboardWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +31,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\BooksWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\CustomersWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\DashboardWindow.xaml">

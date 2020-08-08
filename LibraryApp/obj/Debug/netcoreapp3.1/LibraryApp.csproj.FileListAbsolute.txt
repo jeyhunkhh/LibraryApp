@@ -78,3 +78,5 @@ C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\Ma
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ManagerWindow.baml
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\BooksWindow.g.cs
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\BooksWindow.baml
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\CustomersWindow.g.cs
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\CustomersWindow.baml

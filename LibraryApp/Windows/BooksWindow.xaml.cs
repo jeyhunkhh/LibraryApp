@@ -119,6 +119,10 @@ namespace LibraryApp.Windows
             TxtBookPrice.Clear();
             TxtBookShelf.Clear();
 
+            BtnBookCreate.Visibility = Visibility.Visible;
+            BtnBookDelete.Visibility = Visibility.Hidden;
+            BtnBookUpdate.Visibility = Visibility.Hidden;
+
             FillBooks();
         }
 
