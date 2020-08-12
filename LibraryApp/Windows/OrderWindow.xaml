@@ -1,0 +1,59 @@
+﻿<Window x:Class="LibraryApp.Windows.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryApp.Windows"
+        mc:Ignorable="d"
+        Title="Sifariş yarat" Height="600" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Label x:Name="LblCustomers" Content="Müştəri axtar :" HorizontalAlignment="Left" Margin="36,32,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="TxtSearchCustomers" HorizontalAlignment="Left" Margin="145,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="TxtSearchCustomers_KeyUp"/>
+        <DataGrid x:Name="DgvCustomers" AutoGenerateColumns="False" CanUserAddRows="False" Margin="36,76,690,279" IsReadOnly="True" SelectionChanged="DgvCustomers_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="0.10*" Header="Id" Binding="{Binding Id}"/>
+                <DataGridTextColumn Width="0.25*" Header="Ad" Binding="{Binding Name}"/>
+                <DataGridTextColumn Width="0.25*" Header="Soyad" Binding="{Binding Surname}"/>
+                <DataGridTextColumn Width="0.20*" Header="Nömrə" Binding="{Binding PhoneNumber}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Label x:Name="LblBooks" Content="Kitab axtar :" HorizontalAlignment="Left" Margin="600,32,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="TxtBookSearch" HorizontalAlignment="Left" Margin="693,34,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="TxtBookSearch_KeyUp"/>
+        <DataGrid x:Name="DgvBooks" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" Margin="600,75,101,279" SelectionChanged="DgvBooks_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="0.10*" Header="Id" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Kitab adı" Binding="{Binding Name}" Width="0.20*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Yazar" Binding="{Binding Author}" Width="0.20*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Width="0.11*" Header="Qiymət" Binding="{Binding WeekPrice, StringFormat=\{0:0.00 \}}"/>
+                <DataGridTextColumn Width="0.10*" Header="Say" Binding="{Binding Count}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Label x:Name="LblCreateDate" Content="Kitab götürmə tarixi :" HorizontalAlignment="Left" Margin="36,338,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <DatePicker x:Name="DtpCreateDate" HorizontalAlignment="Left" Margin="194,340,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LblDeadline" Content="Kitab qaytarma tarixi :" HorizontalAlignment="Left" Margin="36,390,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <DatePicker x:Name="DtpDeadline" HorizontalAlignment="Left" Margin="194,392,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BtnOrderCreate" Content="Sifariş yarat" HorizontalAlignment="Left" Margin="36,444,0,0" VerticalAlignment="Top" Width="179" Click="BtnOrderCreate_Click"/>
+
+        <TextBlock x:Name="TbSelectedBook" HorizontalAlignment="Left" Margin="600,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="141" Width="499" Background="#FFFAFAFA"/>
+        <Label Content="Seçilən kitablar :" HorizontalAlignment="Left" Margin="600,336,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="BtnOrderView" Content="Aktiv Sifarişlər" HorizontalAlignment="Left" Margin="273,444,0,0" VerticalAlignment="Top" Width="179" Click="BtnOrderView_Click"/>
+
+
+
+    </Grid>
+
+</Window>

@@ -31,6 +31,7 @@
                     <DataGridTextColumn Width="0.10*" Header="Qiymət" Binding="{Binding WeekPrice}"/>
                     <DataGridTextColumn Width="0.10*" Header="Sayı" Binding="{Binding Count}"/>
                     <DataGridTextColumn Width="0.10*" Header="Dolabı" Binding="{Binding BookShelf}"/>
+                    
                 </DataGrid.Columns>
             </DataGrid>
 

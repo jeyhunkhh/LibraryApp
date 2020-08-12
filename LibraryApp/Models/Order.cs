@@ -19,7 +19,9 @@ namespace LibraryApp.Models
         [Required]
         [Column(TypeName = "money")]
         public decimal OrderPrice { get; set; }
-        public List<Book> Books { get; set; }
+        [Required]
+        public bool Status  { get; set; }
+        public IList<OrderItem> OrderItems { get; set; }
 
     }
 }

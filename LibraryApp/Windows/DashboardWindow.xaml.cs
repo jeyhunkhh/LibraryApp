@@ -40,5 +40,11 @@ namespace LibraryApp.Windows
             CustomersWindow customersWindow = new CustomersWindow();
             customersWindow.ShowDialog();
         }
+
+        private void BtnCreateOrder_Click(object sender, RoutedEventArgs e)
+        {
+            OrderWindow orderWindow = new OrderWindow();
+            orderWindow.ShowDialog();
+        }
     }
 }

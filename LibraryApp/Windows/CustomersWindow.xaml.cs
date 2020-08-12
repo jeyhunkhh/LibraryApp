@@ -111,9 +111,9 @@ namespace LibraryApp.Windows
             TxtCustomerSurname.Clear();
             DtpBirthday.SelectedDate = null;
 
-            BtnCreate.Visibility = Visibility.Hidden;
-            BtnUpdate.Visibility = Visibility.Visible;
-            BtnDelete.Visibility = Visibility.Visible;
+            BtnCreate.Visibility = Visibility.Visible;
+            BtnUpdate.Visibility = Visibility.Hidden;
+            BtnDelete.Visibility = Visibility.Hidden;
 
             FillCustomers();
         }

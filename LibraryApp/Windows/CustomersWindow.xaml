@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryApp.Windows"
         mc:Ignorable="d"
-        Title="Müştərilər" Height="500" Width="1000" WindowStartupLocation="CenterScreen">
+        Title="Müştərilər" Height="500" Width="1000" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <Grid Margin="0,0,732,0">
             <Label x:Name="LblCustomerName" Content="Ad" Margin="38,20,37,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>

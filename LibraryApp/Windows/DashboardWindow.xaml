@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="İdarə paneli" Height="440" Width="720" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
-        <Button x:Name="BtnCreateOrder" Content="Sifariş yaratma" Margin="25,56,485,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="BtnCreateOrder" Content="Sifariş yaratma" Margin="25,56,485,0" Height="32" VerticalAlignment="Top" FontWeight="Bold" Click="BtnCreateOrder_Click"/>
         <Button x:Name="BtnReturnBook" Content="Kitab qaytarma" Margin="255,56,255,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
         <Button x:Name="BtnReturnBookFollow" Content="Kitab qaytaranları izlə" Margin="485,56,25,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         <Border BorderThickness="1" BorderBrush="#FF8645C7" HorizontalAlignment="Center" Height="2" Margin="0,133,0,0" VerticalAlignment="Top" Width="720"/>

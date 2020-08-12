@@ -21,6 +21,13 @@ namespace LibraryApp.Models
         [StringLength(50)]
         public string PhoneNumber { get; set; }
         public ICollection<Order> Orders { get; set; }
-        
+
+        public string FullName 
+        { 
+            get 
+            {
+                return $"{Name} {Surname}";
+            }
+        }
     }
 }
