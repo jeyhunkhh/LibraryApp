@@ -1,0 +1,62 @@
+﻿<Window x:Class="LibraryApp.Windows.ViewReturnBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryApp.Windows"
+        mc:Ignorable="d"
+         Title="Kitab qaytarmaları izlə" Height="600" Width="1000" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid Margin="0,0,750,0">
+            <Button x:Name="BtnTodayReturn" Content="Bugün qaytaranlar" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top" Width="186" Click="BtnTodayReturn_Click"/>
+            <Button x:Name="BtnTomorrowReturn" Content="Sabah qaytaranlar" HorizontalAlignment="Center" Margin="0,121,0,0" VerticalAlignment="Top" Width="186" Click="BtnTomorrowReturn_Click"/>
+            <Button x:Name="BtnLateReturn" Content="Gecikmələr" HorizontalAlignment="Center" Margin="0,179,0,0" VerticalAlignment="Top" Width="186" Click="BtnLateReturn_Click"/>
+
+        </Grid>
+        <Grid x:Name="gridToday" Margin="250,0,0,0" Visibility="Visible">
+            <Label Content="Bugün qaytaranlar" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.167,0.544" Width="182" FontSize="18" FontWeight="Bold"/>
+            <DataGrid x:Name="DgvTodayReturn" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" Margin="0,65,36,209" SelectionChanged="DgvTodayReturn_SelectionChanged" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="0.10*" Header="Id" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Width="0.25*" Header="Ad" Binding="{Binding Customer.Name}"/>
+                    <DataGridTextColumn Width="0.25*" Header="Soyad" Binding="{Binding Customer.Surname}"/>
+                    <DataGridTextColumn Width="0.20*" Header="Nömrə" Binding="{Binding Customer.PhoneNumber}"/>
+                    <DataGridTextColumn Width="0.15*" Header="Başlama" Binding="{Binding CreatedAt,  StringFormat=\{0:dd.MM.yyyy \}}"/>
+                    <DataGridTextColumn Width="0.15*" Header="Bitmə" Binding="{Binding Deadline,  StringFormat=\{0:dd.MM.yyyy \}}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label Content="Kitablar : " HorizontalAlignment="Left" Margin="10,375,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+            <TextBlock x:Name="TbTotayBooks" HorizontalAlignment="Left" Margin="0,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="135" Width="452" Background="#FFFAFAFA"/>
+        </Grid>
+        <Grid x:Name="gridTomorrow" Margin="250,0,0,0" Visibility="Hidden">
+            <Label Content="Sabah qaytaranlar" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.167,0.544" Width="182" FontSize="18" FontWeight="Bold"/>
+            <DataGrid x:Name="DgvTomorrowReturn" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" Margin="0,65,36,209" SelectionChanged="DgvTomorrowReturn_SelectionChanged" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="0.10*" Header="Id" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Width="0.25*" Header="Ad" Binding="{Binding Customer.Name}"/>
+                    <DataGridTextColumn Width="0.25*" Header="Soyad" Binding="{Binding Customer.Surname}"/>
+                    <DataGridTextColumn Width="0.20*" Header="Nömrə" Binding="{Binding Customer.PhoneNumber}"/>
+                    <DataGridTextColumn Width="0.15*" Header="Başlama" Binding="{Binding CreatedAt,  StringFormat=\{0:dd.MM.yyyy \}}"/>
+                    <DataGridTextColumn Width="0.15*" Header="Bitmə" Binding="{Binding Deadline,  StringFormat=\{0:dd.MM.yyyy \}}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label Content="Kitablar : " HorizontalAlignment="Left" Margin="10,375,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+            <TextBlock x:Name="TbTomorrowBooks" HorizontalAlignment="Left" Margin="0,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="135" Width="452" Background="#FFFAFAFA"/>
+        </Grid>
+        <Grid x:Name="gridLate" Margin="250,0,0,0" Visibility="Hidden">
+            <Label Content="Gecikmələr" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.167,0.544" Width="182" FontSize="18" FontWeight="Bold"/>
+            <DataGrid x:Name="DgvLateReturn" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" Margin="0,65,36,209" SelectionChanged="DgvLateReturn_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="0.10*" Header="Id" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Width="0.25*" Header="Ad" Binding="{Binding Customer.Name}"/>
+                    <DataGridTextColumn Width="0.25*" Header="Soyad" Binding="{Binding Customer.Surname}"/>
+                    <DataGridTextColumn Width="0.20*" Header="Nömrə" Binding="{Binding Customer.PhoneNumber}"/>
+                    <DataGridTextColumn Width="0.15*" Header="Başlama" Binding="{Binding CreatedAt,  StringFormat=\{0:dd.MM.yyyy \}}"/>
+                    <DataGridTextColumn Width="0.15*" Header="Bitmə" Binding="{Binding Deadline,  StringFormat=\{0:dd.MM.yyyy \}}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label Content="Kitablar : " HorizontalAlignment="Left" Margin="10,375,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+            <TextBlock x:Name="TbLaleBooks" HorizontalAlignment="Left" Margin="0,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="135" Width="452" Background="#FFFAFAFA"/>
+        </Grid>
+    </Grid>
+</Window>

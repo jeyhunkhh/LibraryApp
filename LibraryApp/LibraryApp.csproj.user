@@ -34,6 +34,9 @@
     <Compile Update="Windows\ReturnBooksWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\ViewReturnBookWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Windows\ActiveOrderWindow.xaml">
@@ -61,6 +64,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\ReturnBooksWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\ViewReturnBookWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

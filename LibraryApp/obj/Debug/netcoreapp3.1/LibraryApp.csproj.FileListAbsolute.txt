@@ -86,3 +86,5 @@ C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\Ac
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ActiveOrderWindow.baml
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ReturnBooksWindow.g.cs
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ReturnBooksWindow.baml
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ViewReturnBookWindow.g.cs
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ViewReturnBookWindow.baml

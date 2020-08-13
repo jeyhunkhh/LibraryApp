@@ -70,7 +70,7 @@ namespace LibraryApp.Windows
             }
 
             _selectedOrder.Status = false;
-            _selectedOrder.ReturnDate = DateTime.Now;
+            _selectedOrder.ReturnDate = DateTime.Today;
 
             _libraryContext.SaveChanges();
 
@@ -93,7 +93,7 @@ namespace LibraryApp.Windows
             
             foreach (var item in fine)
             {
-                var day = (item.Deadline - DateTime.Now).Days;
+                var day = (item.Deadline - DateTime.Today).Days;
                 if (day < 0)
                 {
                     item.FinePrice =  (-day);

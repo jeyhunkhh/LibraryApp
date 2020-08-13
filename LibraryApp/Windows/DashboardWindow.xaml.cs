@@ -52,5 +52,11 @@ namespace LibraryApp.Windows
             ReturnBooksWindow returnBooksWindow = new ReturnBooksWindow();
             returnBooksWindow.ShowDialog();
         }
+
+        private void BtnReturnBookFollow_Click(object sender, RoutedEventArgs e)
+        {
+            ViewReturnBookWindow viewReturnBookWindow = new ViewReturnBookWindow();
+            viewReturnBookWindow.ShowDialog();
+        }
     }
 }

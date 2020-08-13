@@ -12,7 +12,7 @@
 
         <DataGrid x:Name="DgvOrders" AutoGenerateColumns="False" CanUserAddRows="False" Margin="40,76,40,192" IsReadOnly="True" SelectionChanged="DgvOrders_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Width="0.10*" Header="Id" Binding="{Binding Id}"/>
+                <DataGridTextColumn Width="0.07*" Header="Id" Binding="{Binding Id}"/>
                 <DataGridTextColumn Width="0.20*" Header="Ad" Binding="{Binding Customer.Name}"/>
                 <DataGridTextColumn Width="0.20*" Header="Soyad" Binding="{Binding Customer.Surname}"/>
                 <DataGridTextColumn Width="0.20*" Header="Nömrə" Binding="{Binding Customer.PhoneNumber}"/>
