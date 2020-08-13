@@ -46,5 +46,11 @@ namespace LibraryApp.Windows
             OrderWindow orderWindow = new OrderWindow();
             orderWindow.ShowDialog();
         }
+
+        private void BtnReturnBook_Click(object sender, RoutedEventArgs e)
+        {
+            ReturnBooksWindow returnBooksWindow = new ReturnBooksWindow();
+            returnBooksWindow.ShowDialog();
+        }
     }
 }

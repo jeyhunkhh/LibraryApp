@@ -16,9 +16,13 @@ namespace LibraryApp.Models
         [Required]
         [Column(TypeName = "date")]
         public DateTime Deadline { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime? ReturnDate { get; set; }
         [Required]
         [Column(TypeName = "money")]
         public decimal OrderPrice { get; set; }
+        [Column(TypeName = "money")]
+        public decimal? FinePrice { get; set; }
         [Required]
         public bool Status  { get; set; }
         public IList<OrderItem> OrderItems { get; set; }

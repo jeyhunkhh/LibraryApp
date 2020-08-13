@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\App.xaml
-839573394
+9815123327
 
-31302809753
+36-1208774942
 2121524175775
-Windows\ActiveOrderWindow.xaml;Windows\AdminPanel.xaml;Windows\BooksWindow.xaml;Windows\CustomersWindow.xaml;Windows\DashboardWindow.xaml;Windows\LoginWindow.xaml;Windows\ManagerWindow.xaml;Windows\OrderWindow.xaml;
+Windows\ActiveOrderWindow.xaml;Windows\AdminPanel.xaml;Windows\BooksWindow.xaml;Windows\CustomersWindow.xaml;Windows\DashboardWindow.xaml;Windows\LoginWindow.xaml;Windows\ManagerWindow.xaml;Windows\OrderWindow.xaml;Windows\ReturnBooksWindow.xaml;
 
-False
+True
 

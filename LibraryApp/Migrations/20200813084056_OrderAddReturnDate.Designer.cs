@@ -4,14 +4,16 @@ using LibraryApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LibraryApp.Migrations
 {
     [DbContext(typeof(LibraryContext))]
-    partial class LibraryContextModelSnapshot : ModelSnapshot
+    [Migration("20200813084056_OrderAddReturnDate")]
+    partial class OrderAddReturnDate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -132,9 +134,6 @@ namespace LibraryApp.Migrations
 
                     b.Property<DateTime>("Deadline")
                         .HasColumnType("date");
-
-                    b.Property<decimal?>("FinePrice")
-                        .HasColumnType("money");
 
                     b.Property<decimal>("OrderPrice")
                         .HasColumnType("money");
