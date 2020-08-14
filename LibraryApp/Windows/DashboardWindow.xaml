@@ -16,7 +16,7 @@
         <Button x:Name="BtnBook" Content="Kitablar" Margin="25,190,485,0" Height="32" VerticalAlignment="Top" FontWeight="Bold" Click="BtnBook_Click"/>
         <Button x:Name="BtnManager" Content="İdarəçilər" Margin="255,190,255,0" Height="32" VerticalAlignment="Top" FontWeight="Bold" Click="BtnManager_Click"/>
         <Button x:Name="BtnCustomer" Content="Müştərilər" Margin="485,190,25,0" Height="32" VerticalAlignment="Top" FontWeight="Bold" Click="BtnCustomer_Click"/>
-        <Button x:Name="BtnManager_Copy" Content="Hesabatlar" Margin="255,325,255,0" Height="32" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="BtnReport" Content="Hesabatlar" Margin="255,315,255,0" Height="32" VerticalAlignment="Top" FontWeight="Bold" Click="BtnReport_Click"/>
 
 
     </Grid>

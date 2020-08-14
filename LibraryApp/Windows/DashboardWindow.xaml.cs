@@ -58,5 +58,11 @@ namespace LibraryApp.Windows
             ViewReturnBookWindow viewReturnBookWindow = new ViewReturnBookWindow();
             viewReturnBookWindow.ShowDialog();
         }
+
+        private void BtnReport_Click(object sender, RoutedEventArgs e)
+        {
+            ReportWindow reportWindow = new ReportWindow();
+            reportWindow.ShowDialog();
+        }
     }
 }

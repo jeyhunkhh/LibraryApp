@@ -81,10 +81,15 @@ C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\Cu
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\CustomersWindow.baml
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\OrderWindow.g.cs
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\OrderWindow.baml
-C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\LibraryApp.csproj.CoreCompileInputs.cache
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ActiveOrderWindow.g.cs
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ActiveOrderWindow.baml
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ReturnBooksWindow.g.cs
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ReturnBooksWindow.baml
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ViewReturnBookWindow.g.cs
 C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ViewReturnBookWindow.baml
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ReportWindow.g.cs
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\Windows\ReportWindow.baml
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\bin\Debug\netcoreapp3.1\ClosedXML.dll
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\bin\Debug\netcoreapp3.1\ExcelNumberFormat.dll
+C:\Users\Ceyhun\Desktop\LibraryApp\LibraryApp\obj\Debug\netcoreapp3.1\LibraryApp.csproj.CoreCompileInputs.cache
