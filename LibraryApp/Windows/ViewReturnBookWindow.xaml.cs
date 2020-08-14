@@ -33,12 +33,13 @@ namespace LibraryApp.Windows
             FillLate();
         }
 
+        //Veiw Today Orders in Datagrids
         private void FillToday()
         {
             DgvTodayReturn.ItemsSource = _libraryContext.Orders.Where(x => x.Status == true && x.Deadline == DateTime.Today).Include(x => x.Customer).ToList();
         }
 
-        
+        // Selected Today Order view Books in Order
         private void DgvTodayReturn_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgvTodayReturn.SelectedItem == null) return;
@@ -55,11 +56,13 @@ namespace LibraryApp.Windows
             }
          }
 
+        //Veiw Tomorrow Orders in Datagrids
         private void FillTomorrow()
         {
             DgvTomorrowReturn.ItemsSource = _libraryContext.Orders.Where(x => x.Status == true && x.Deadline == DateTime.Today.AddDays(1)).Include(x => x.Customer).ToList();
         }
 
+        // Selected Tomorrow Order view Books in Order
         private void DgvTomorrowReturn_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgvTomorrowReturn.SelectedItem == null) return;
@@ -76,10 +79,13 @@ namespace LibraryApp.Windows
             }
         }
 
+        //Veiw Late Orders in Datagrids
         private void FillLate()
         {
             DgvLateReturn.ItemsSource = _libraryContext.Orders.Where(x => x.Status == true && x.Deadline < DateTime.Today).Include(x => x.Customer).ToList();
         }
+
+        // Selected Late Order view Books in Order
         private void DgvLateReturn_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgvLateReturn.SelectedItem == null) return;

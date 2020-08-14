@@ -1,18 +1,9 @@
 ﻿using LibraryApp.Data;
 using LibraryApp.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace LibraryApp.Windows
 {
@@ -60,6 +51,7 @@ namespace LibraryApp.Windows
             MessageBox.Show("İdarəçi əlavə olundu");
         }
         
+        // Selecred Manager CRUD
         private void DgManagers_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgManagers.SelectedItem == null) return;

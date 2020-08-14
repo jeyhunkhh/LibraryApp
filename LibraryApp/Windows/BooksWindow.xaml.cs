@@ -1,17 +1,9 @@
 ﻿using LibraryApp.Data;
 using LibraryApp.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace LibraryApp.Windows
 {
@@ -31,6 +23,7 @@ namespace LibraryApp.Windows
             FillBooks();
         }
 
+        // Selecred Book CRUD
         private void DgBooks_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgBooks.SelectedItem == null) return;

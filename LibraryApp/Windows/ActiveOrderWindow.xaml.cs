@@ -2,17 +2,10 @@
 using LibraryApp.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace LibraryApp.Windows
 {
@@ -31,11 +24,13 @@ namespace LibraryApp.Windows
             FillOrders();
         }
 
+        //Veiw Books in Datagrids
         private void FillOrders()
         {
             DgvOrders.ItemsSource = _libraryContext.Orders.Where(x => x.Status == true).Include(x => x.Customer).ToList();
         }
 
+        // Search Customer
         private void TxtCustomerSearch_KeyUp(object sender, KeyEventArgs e)
         {
             var filtered = _libraryContext.Orders.Where(m => m.Customer.Name.StartsWith(TxtCustomerSearch.Text) && m.Status == true);
@@ -43,6 +38,7 @@ namespace LibraryApp.Windows
             DgvOrders.ItemsSource = filtered.ToList();
         }
 
+        // Selected Order view Books in Order
         private void DgvOrders_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgvOrders.SelectedItem == null) return; 

@@ -6,15 +6,8 @@ using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace LibraryApp.Windows
 {
@@ -31,11 +24,13 @@ namespace LibraryApp.Windows
             _libraryContext = new LibraryContext();
         }
 
+        //Veiw Orders in Datagrids
         private void FillOrder()
         {
             DgvFullOrders.ItemsSource = _libraryContext.Orders.Where(x => x.CreatedAt >= DtpStart.SelectedDate && x.Deadline <= DtpEnd.SelectedDate || (x.ReturnDate >=DtpStart.SelectedDate  && x.ReturnDate <= DtpEnd.SelectedDate)).Include(x=> x.Customer).ToList();
         }
 
+        // Search Button
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if(DtpEnd.SelectedDate == null || DtpStart.SelectedDate == null)
@@ -45,6 +40,7 @@ namespace LibraryApp.Windows
             FillOrder();
         }
 
+        // Selected Order view Books in Order
         private void DgvFullOrders_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgvFullOrders.SelectedItem == null) return;

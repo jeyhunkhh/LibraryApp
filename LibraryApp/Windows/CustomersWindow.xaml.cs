@@ -1,17 +1,9 @@
 ﻿using LibraryApp.Data;
 using LibraryApp.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace LibraryApp.Windows
 {
@@ -82,6 +74,7 @@ namespace LibraryApp.Windows
             }
         }
 
+        // Selecred Book CRUD
         private void DgCustomers_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgCustomers.SelectedItem == null) return;
@@ -98,6 +91,7 @@ namespace LibraryApp.Windows
             BtnDelete.Visibility = Visibility.Visible;
         }
 
+        //Veiw Customers in Datagrids
         private void FillCustomers()
         {
             DgCustomers.ItemsSource = _libraryContext.Customers.ToList();

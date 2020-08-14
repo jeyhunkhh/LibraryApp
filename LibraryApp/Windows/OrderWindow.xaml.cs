@@ -1,20 +1,11 @@
 ﻿using LibraryApp.Data;
-using LibraryApp.Migrations;
 using LibraryApp.Models;
-using MaterialDesignThemes.Wpf;
-using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace LibraryApp.Windows
 {
@@ -37,16 +28,19 @@ namespace LibraryApp.Windows
             FillCustomers();
         }
 
+        //Veiw Books in Datagrids
         private void FillBooks()
         {
             DgvBooks.ItemsSource = _libraryContext.Books.ToList();
         }
 
+        //Veiw Customers in Datagrids
         private void FillCustomers()
         {
             DgvCustomers.ItemsSource = _libraryContext.Customers.ToList();
         }
-
+        
+        // Selected Add Books in Order
         private void DgvBooks_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgvBooks.SelectedItem == null) return;
@@ -83,6 +77,7 @@ namespace LibraryApp.Windows
 
         }
 
+        // Selected Add Customer in Order
         private void DgvCustomers_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (DgvCustomers.SelectedItem == null) return;
